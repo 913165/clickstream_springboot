@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickstream Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            line-height: 1.4;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #f7f7f7;
+            cursor: pointer;
+        }
+
+        pre {
+            background: #111;
+            color: #d6f5d6;
+            padding: 0.75rem;
+            border-radius: 6px;
+            max-height: 240px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Small Clickstream Demo</h1>
+<p>Click any demo button to send an event, then refresh recent events.</p>
+
+<div class="buttons">
+    <button id="buy-now">Buy Now</button>
+    <button id="add-cart">Add to Cart</button>
+    <button id="open-offer">Open Offer</button>
+</div>
+
+<button id="refresh">Refresh Recent Events</button>
+<pre id="output">No events yet.</pre>
+
+<script src="/app.js"></script>
+</body>
+</html>
+
